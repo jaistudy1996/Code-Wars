@@ -6,20 +6,21 @@
 
 import pdb
 
+
 def is_prime(num):
-	if num > 1:
-		for number in range(2, num):
-			if num % number == 0:
-				return False
-		return True
-	else:
-		return False
+    if num > 1:
+        for number in range(2, num):
+            if num % number == 0:
+                return False
+        return True
+    else:
+        return False
 
 
 def main():
-	pdb.set_trace()
-	print(is_prime(5))
-	for i in range(1000):
-		if is_prime(i) == True:
-			print(i)
+    pdb.set_trace()
+    print(is_prime(5))
+    for i in range(1000):
+        if is_prime(i) is True:
+            print(i)
 main()
