@@ -89,6 +89,7 @@ int main(){
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 char* game (unsigned long long n) {
     char text[80] = {0};
