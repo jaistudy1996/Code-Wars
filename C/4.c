@@ -39,7 +39,7 @@ int* nbMonths(int startPriceOld, int startPriceNew, int savingperMonth, double p
 	double startPriceOldD = startPriceOld;
 	double startPriceNewD = startPriceNew;
 
- 	int* ret = malloc(sizeof(monthSave));
+ 	int* ret = malloc(sizeof(monthSave)); // this needs to be casted to be a pointer.
 	if(startPriceOld >= startPriceNew){
 		monthSave[0] = 0;
 		monthSave[1] = startPriceOld - startPriceNew;
@@ -67,6 +67,11 @@ int* nbMonths(int startPriceOld, int startPriceNew, int savingperMonth, double p
 		return ret;
 	}
 }
+
+	// int *ret=(int*)malloc(sizeof(int)*2);
+ //    *(ret) = months-1;
+ //    *(ret+1) = (int)round(totalMoney - startPriceNewD);
+	// return ret;
 
 int main(void){
 	// printf("[%d, %d]\n", *(nbMonths(12000, 8000, 1000, 1.5)), *(nbMonths(12000, 8000, 1000, 1.5)+1));
