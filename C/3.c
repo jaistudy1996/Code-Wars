@@ -10,6 +10,9 @@ Ouput :: "Position of alphabet: 1"
 #include <string.h>
 #include <stdlib.h>
 
+
+// can use asprintf, it becomes one line if we use that. 
+
 char* position(char alphabet)
 {
 	const char values[] = "abcdefghijklmnopqrstuvwxyz";
